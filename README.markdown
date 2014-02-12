@@ -4,7 +4,7 @@ A light-on-dark color theme adapted from Todd Werth's [original Textmate theme](
 
 ## Screenshot
 
-![Screenshot](https://github.com/jmdeldin/ir-black-theme.el/raw/master/screenshot.png)
+![Screenshot](https://github.com/jacobj/ir-black-theme.el/raw/master/screenshot.png)
 
 ## Installation
 
