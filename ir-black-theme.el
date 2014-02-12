@@ -5,7 +5,8 @@
 ;; Author: Jon-Michael Deldin <dev@jmdeldin.com>
 ;; Keywords: faces
 ;; Compatibility: 24
-;; Version: 1.0.1
+;; Version: 20130302.2355
+;; X-Original-Version: 1.0.1
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -55,8 +56,10 @@
       (*light-purple*       "#FFCCFF")
       (*line-number*        "#3D3D3D")
       (*method-declaration* "#FFD2A7")
-      (*mode-line-bg*       "#202020")
-      (*mode-line-fg*       "#CCCCCC")
+      (*mode-line-bg*       "grey70")
+      (*mode-line-fg*       "black")
+      (*mode-line-inactive* "grey30")
+      (*fringe*             "grey10")
       (*normal*             "#F6F3E8")
       (*number*             "#FF73FD")
       (*operators*          "#FFFFB6")
@@ -81,7 +84,7 @@
    `(header-line ((t (:background, *mode-line-bg* :foreground, *normal*)))) ;; info header
    `(highlight ((t (:background, *current-line*))))
    `(highlight-face ((t (:background, *current-line*))))
-   `(hl-line ((t (:background, *current-line* ))))
+   `(hl-line ((t (:background, *current-line* :underline t))))
    `(info-xref ((t (:foreground, *keywords* :underline t))))
    `(region ((t (:background, *visual-selection*))))
    `(underline ((nil (:underline t))))
@@ -107,11 +110,11 @@
    `(font-lock-warning-face ((t (:foreground, *red*))))
 
    ;; GUI
-   `(fringe ((t (:background, *background-color*))))
+   `(fringe ((t (:background, *fringe*))))
    `(linum ((t (:background, *line-number*))))
    `(minibuffer-prompt ((t (:foreground, *variable*))))
    `(mode-line ((t (:background, *mode-line-bg* :foreground, *mode-line-fg*))))
-   `(mode-line-inactive ((t (:background, *mode-line-bg* :foreground, *background-color*))))
+   `(mode-line-inactive ((t (:background, *mode-line-inactive* :foreground, *mode-line-bg*))))
    `(cursor ((t (:background, *cursor-underscore*))))
    `(text-cursor ((t (:background, *cursor-underscore*))))
    `(vertical-border ((t (:foreground, *background-color*)))) ;; between splits
