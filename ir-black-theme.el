@@ -59,7 +59,7 @@
       (*mode-line-bg*       "grey70")
       (*mode-line-fg*       "black")
       (*mode-line-inactive* "grey30")
-      (*fringe*             "grey10")
+      (*fringe*             "grey15")
       (*normal*             "#F6F3E8")
       (*number*             "#FF73FD")
       (*operators*          "#FFFFB6")
@@ -141,7 +141,17 @@
    `(org-clock-overlay ((t (:foreground, *mode-line-bg* :background, *string*))))
 
    ;; starter kit
-   `(esk-paren-face ((t (:foreground, *string-inner*))))))
+   `(esk-paren-face ((t (:foreground, *string-inner*))))
+
+   ;; ido mode
+   `(ido-subdir ((t (:foreground, *red*))))
+   `(ido-first-match ((t (:foreground, *constant*))))
+   `(ido-only-match ((t (:foreground, *string*))))
+   
+   ;; aucTeX
+   `(font-latex-sectioning-2-face ((t (:foreground, *string*))))
+   `(font-latex-sectioning-3-face ((t (:foreground, *constant*))))
+   `(font-latex-warning-face ((t (:foreground, *red*))))))
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)
